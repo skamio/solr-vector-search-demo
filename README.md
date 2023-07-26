@@ -1,0 +1,1 @@
+# solr-vector-search-demo
