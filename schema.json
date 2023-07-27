@@ -1,0 +1,21 @@
+{
+  "add-field-type": {
+    "name": "knn_vector",
+    "class": "solr.DenseVectorField",
+    "vectorDimension": "768",
+    "similarityFunction": "cosine"
+  },
+  "add-field": [
+    {
+      "name": "text",
+      "type": "text_general",
+      "multiValued": false
+    },
+    {
+      "name": "vector",
+      "type": "knn_vector",
+      "indexed": true,
+      "stored": true
+    }
+  ]
+}
